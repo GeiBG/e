@@ -1,5 +1,5 @@
 let counter = 0;
-let Title = '$olar best';
+let Title = 'Glock in Hand';
 let direction = true;
 
 aniTitle = setInterval(function () {
