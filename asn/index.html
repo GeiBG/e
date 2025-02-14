@@ -1,0 +1,137 @@
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⠶⠶⣶⠶⠶⠶⠶⠶⠶⠶⠶⠶⢶⠶⠶⠶⠤⠤⠤⠤⣄⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠒⠒⠒⠀⠀⠀⠀⠤⢤⣤⣄⠉⠉⠛⠛⠷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣰⠟⠀⠀⠀⠀⠀⠐⠋⢑⣤⣶⣶⣤⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣄⡂⠀⠀⠶⢄⠙⢷⣤⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣸⡿⠚⠉⡀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⢢⠀⠀⡀⣰⣿⣿⣿⣿⣦⡀⠀⠀⠡⡀⢹⡆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣴⠏⠀⣀⣀⣀⡤⢤⣄⣠⣿⣿⣿⣿⣻⣿⣿⣷⠀⢋⣾⠈⠙⣶⠒⢿⣿⣿⣿⣿⡿⠟⠃⠀⡀⠡⠼⣧⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⢀⣴⣿⢃⡴⢊⢽⣶⣤⣀⠀⠊⠉⠉⡛⢿⣿⣿⣿⠿⠋⢀⡀⠁⠀⠀⢸⣁⣀⣉⣉⣉⡉⠀⠩⡡⠀⣩⣦⠀⠈⠻⣦⡀⠀⠀⠀⠀
+⠀⢠⡟⢡⠇⡞⢀⠆⠀⢻⣿⣿⣷⣄⠀⢀⠈⠂⠈⢁⡤⠚⡟⠉⠀⣀⣀⠀⠈⠳⣍⠓⢆⢀⡠⢀⣨⣴⣿⣿⡏⢀⡆⠀⢸⡇⠀⠀⠀⠀
+⠀⣾⠁⢸⠀⠀⢸⠀⠀⠀⠹⣿⣿⣿⣿⣶⣬⣦⣤⡈⠀⠀⠇⠀⠛⠉⣩⣤⣤⣤⣿⣤⣤⣴⣾⣿⣿⣿⣿⣿⣧⠞⠀⠀⢸⡇⠀⠀⠀⠀
+⠀⢹⣆⠸⠀⠀⢸⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣟⣛⠛⠛⣛⡛⠛⠛⣛⣋⡉⠉⣡⠶⢾⣿⣿⣿⣿⣿⣿⡇⠀⠀⢀⣾⠃⠀⠀⠀⠀
+⠀⠀⠻⣆⡀⠀⠈⢂⠀⠀⠀⠠⡈⢻⣿⣿⣿⣿⡟⠁⠈⢧⡼⠉⠙⣆⡞⠁⠈⢹⣴⠃⠀⢸⣿⣿⣿⣿⣿⣿⠃⠀⡆⣾⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⢻⣇⠀⠀⠀⠀⠀⠀⢡⠀⠹⣿⣿⣿⣷⡀⠀⣸⡇⠀⠀⣿⠁⠀⠀⠘⣿⠀⠀⠘⣿⣿⣿⣿⣿⣿⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠹⣇⠀⠠⠀⠀⠀⠀⠡⠐⢬⡻⣿⣿⣿⣿⣿⣷⣶⣶⣿⣦⣤⣤⣤⣿⣦⣶⣿⣿⣿⣿⣿⣿⣿⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠹⣧⡀⠡⡀⠀⠀⠀⠑⠄⠙⢎⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⢿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠳⣤⡐⡄⠀⠀⠀⠈⠂⠀⠱⣌⠻⣿⣿⣿⣿⣿⣿⣿⠿⣿⠟⢻⡏⢻⣿⣿⣿⣿⣿⣿⣿⠀⢸⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢮⣦⡀⠂⠀⢀⠀⠀⠈⠳⣈⠻⣿⣿⣿⡇⠘⡄⢸⠀⠀⣇⠀⣻⣿⣿⣿⣿⣿⡏⠀⠸⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢶⣤⣄⡑⠄⠀⠀⠈⠑⠢⠙⠻⢷⣶⣵⣞⣑⣒⣋⣉⣁⣻⣿⠿⠟⠱⠃⡸⠀⣧⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⣷⣄⡀⠐⠢⣄⣀⡀⠀⠉⠉⠉⠉⠛⠙⠭⠭⠄⠒⠈⠀⠐⠁⢀⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢦⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣒⡠⠄⣠⡾⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠷⠶⣦⣤⣭⣤⣬⣭⣭⣴⠶⠛⠉⠀⠀⠀⠀
+          why you skidding luh bro :sob:
+⠀⠀⠀⠀
+-->
+<html lang=en>
+    <meta content="text/html;charset=UTF-8" http-equiv=content-type>
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+
+    <title>⚡︎ ⚡︎</title>
+
+    <meta property="og:url" content="solar.best">
+    <meta property="og:title" content="Bundeskriminalamt"/>
+   <meta property="og:description" content="Echter Betrügerarsch.">
+    <meta content="https://cdn.discordapp.com/attachments/1202206800871694397/1246116158105587822/2560px-BKA-Logo.png?ex=665b379b&is=6659e61b&hm=2e891e813c811446165da8b88fe055bdd274a810e274ca1df88c7d14baea4af6&" property ="og:image" />
+    <meta name="theme-color" content="#fffdfd">
+
+    <link href=main.css rel=stylesheet>
+
+    <script src=https://kit.fontawesome.com/38359ed66d.js crossorigin=anonymous></script>
+
+    <script src=main/assets/js/disable_inspect.js></script>
+    <script src=main/assets/js/disable-devtool.min.js></script>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js></script>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+
+    <script src=main.js></script>
+    <script src=main/assets/js/funny.js></script>
+    <script src=snow.js></script>
+    <script>window.onload = () => {
+   let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+   bannerNode.parentNode.removeChild(bannerNode);
+}</script>
+
+
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <body oncontextmenu="">
+        <input autocomplete=off id=overlay-toggle type=checkbox>
+        <div class="fullscreen overlay">
+            <div id=center>
+                <label for=overlay-toggle onclick=audioPlay(),DiscordTypeWriter()>
+                    <div id=enter>
+                        <b class="begin rainbow">ꑭ click to enter ꑭ</b>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <video autoplay loop muted webkit-playsinline playsinline class="fullscreen bg-video">
+            <source src="badsi.mp4" type="video/mp4">
+        </video>
+
+        <audio id=audio loop preload=auto>
+            <source src="badsi.mp3" type=audio/mp3>
+        </audio>
+
+        <style>
+            @font-face {
+                font-family: Modeseven;
+                src: url(assets/css/modes.ttf) format('truetype')
+            }
+
+            #center h1 {
+                font-size: 51px;
+                font-family: Modeseven;
+                text-shadow: 0 0 .4em #070707
+            }
+        </style>
+
+        <div class=snowflakes>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+            <div class=snowflake>ꑭ</div>
+        </div>
+        
+        <div id=center>
+            <hr style="height:67pt; visibility:hidden;"/>
+
+            <div class="badges">
+                <a class="hover" title="Verified">
+                    <img src="main/assets/img/verified.png" height="15" width="15">
+                </a>
+            </div>
+
+            <div>
+                <h1>
+                    <span class="neonText" style="color: #ffffff; background-image: url('https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif');">Badsi</span>
+                </h1>
+            </div>
+
+            <div class="socials">
+                <a class="hover" title="Youtube" href="https://youtu.be/FJ3N_2r6R-o?si=IVrEU7Jy38EljyXa">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 787 132">
+                        <path d="M0 0h787v132H0z" fill="#00a878"/>
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" fill="#ffffff">Kleinanzeigen</text>
+                      </svg>
+                </a>
+                <a class="hover" title="Telegram" href="https://t.me/methbadsi">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#0088cc" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #0088cc);">
+                        <path d="M446.7 69.6L394.2 438.2c-4.6 27.8-16.3 34.9-33 21.7L294 365.4l-63 60.5c-6.9 6.9-12.6 12.6-25.7 12.6l9.2-130.1L384.5 131c6.4-6.4-1.4-10-9.9-6.6L111 266.4 6.7 231.4c-27.1-8.5-27.6-27.1 5.7-40.1L426.2 51.1c20.6-7.1 39.1 5.1 33.5 18.5z"></path>
+                    </svg>           
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
