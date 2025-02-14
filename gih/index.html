@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=UTF-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Andi Goldberger</title>
+    <meta property="og:url" content="andi.best">
+    <meta property="og:title" content="Klaz" />
+    <meta property="og:description" content="joa">
+    <meta content="https://anzeigenchef-online.de/wp-content/uploads/2024/01/kleinanzeigen-bildmarke.jpeg" property="og:image" />
+    <meta name="theme-color" content="#35df35">
+    <link href="andi/assets/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38359ed66d.js" crossorigin="anonymous"></script>
+    <script src="main/assets/js/disable_inspect.js"></script>
+    <script src="main/assets/js/disable-devtool.min.js"></script>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="andi/assets/main.js"></script>
+    <script src="main/assets/js/funny.js"></script>
+    <script src="andi/assets/snow.js"></script>
+    <script>
+        window.onload = () => {
+            let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+            bannerNode.parentNode.removeChild(bannerNode);
+        }
+
+        function setRandomMedia() {
+            const mediaFolder = 'andi/media/';
+
+            const mediaList = [
+                { video: 'lied1/video.mp4', audio: 'lied1/audio.mp3' },
+                { video: 'lied2/video.mp4', audio: 'lied2/audio.mp3' },
+                { video: 'lied3/video.mp4', audio: 'lied3/audio.mp3' }
+            ];
+
+            const lastMedia = JSON.parse(localStorage.getItem('lastMedia'));
+
+            let randomMedia;
+            do {
+                randomMedia = mediaList[Math.floor(Math.random() * mediaList.length)];
+            } while (lastMedia && randomMedia.video === lastMedia.video && randomMedia.audio === lastMedia.audio);
+
+            localStorage.setItem('lastMedia', JSON.stringify(randomMedia));
+
+            document.querySelector('.bg-video source').src = mediaFolder + randomMedia.video;
+            document.getElementById('audio').querySelector('source').src = mediaFolder + randomMedia.audio;
+
+            document.querySelector('.bg-video').load();
+            document.getElementById('audio').load();
+            document.getElementById('audio').play();  // Audio starten
+        }
+
+        function audioPlay() {
+            setRandomMedia();  // Zufälliges Video und Audio setzen
+        }
+    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        @font-face {
+            font-family: Modeseven;
+            src: url(assets/css/modes.ttf) format('truetype')
+        }
+
+        #center h1 {
+            font-size: 51px;
+            font-family: Modeseven;
+            text-shadow: 0 0 .4em #070707
+        }
+    </style>
+</head>
+
+<body oncontextmenu="">
+    <input autocomplete="off" id="overlay-toggle" type="checkbox">
+    <div class="fullscreen overlay">
+        <div id="center">
+            <label for="overlay-toggle" onclick="audioPlay(), DiscordTypeWriter()">
+                <div id="enter">
+                    <b class="begin rainbow">[click to enter]</b>
+                </div>
+            </label>
+        </div>
+    </div>
+    <!-- Hintergrundvideo und Audio-Player, die beim Klick aktualisiert werden -->
+    <video autoplay loop muted webkit-playsinline playsinline class="fullscreen bg-video">
+        <source src="andi.mp4" type="video/mp4">
+    </video>
+    <audio id="audio" loop preload="auto">
+        <source src="andi.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="snowflakes">
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+        <div class="snowflake">♰</div>
+    </div>
+
+    <div id="center">
+        <div>
+            <h1>
+                <span class="neonText" style="color: #ffffff; background-image: url('https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif?ex=677a6054&is=67790ed4&hm=a1edac9092e1854fdf621848ef471362055eaa28b14a4a987639065321a8df5f&');">Andi Goldberger</span>
+            </h1>
+        </div>
+        <div id="bio" class="typed-text"></div>
+        <div class="socials">
+            <a class="hover" title="Youtube" href="https://www.youtube.com/@">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#FF0000" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #FF0000);">
+                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                </svg>
+            </a>
+            <a class="hover" title="Telegram" href="https://t.me/VoughtMarket">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#0088cc" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #0088cc);">
+                    <path d="M446.7 69.6L394.2 438.2c-4.6 27.8-16.3 34.9-33 21.7L294 365.4l-63 60.5c-6.9 6.9-12.6 12.6-25.7 12.6l9.2-130.1L384.5 131c6.4-6.4-1.4-10-9.9-6.6L111 266.4 6.7 231.4c-27.1-8.5-27.6-27.1 5.7-40.1L426.2 51.1c20.6-7.1 39.1 5.1 33.5 18.5z"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Typed('#bio', {
+                strings: ["kleinanzeigen.fun", "NordVPN user", "0800 111 0 111", "kleinanzeigen.fun/1337/", "g0ldb3rg3r"], 
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: true,
+                showCursor: false,
+                cursorChar: '|',
+                autoInsertCss: true
+            });
+        });
+    </script>
+</body>
+
+</html>
