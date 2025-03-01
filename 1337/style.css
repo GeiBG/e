@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0; /* 1337 green */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.ip {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: left;
+    margin: 0 auto;
+    width: 500px;
+}
